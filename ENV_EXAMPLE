@@ -1,0 +1,29 @@
+# Copy to .env and fill in values
+
+# Discord
+DISCORD_TOKEN=
+APPLICATION_ID= # Your Discord Application (Client) ID, used for slash command registration
+GUILD_ID= # Optional: a development guild ID for faster command registration
+
+# Google Sheets
+MASTER_SPREADSHEET_ID=
+
+# Google Service Account Credentials (choose one method):
+# Method 1: Full JSON as environment variable (recommended for Heroku)
+GOOGLE_CREDENTIALS_JSON=
+# Method 2: Individual fields
+GOOGLE_CLIENT_EMAIL=
+GOOGLE_PRIVATE_KEY=
+# Method 3: Local file (for development only)
+# Place service account JSON at onboardingbot/google-credentials.json (do not commit)
+
+# Mapping and roles
+GUILD_TAB_MAP= # e.g., 123456789012345678:Server A Log
+REQUIRED_ROLE_IDS=1413224886117204028,1311452842740900860 # onboarding_role_id,verified_role_id
+
+# Pushover Mobile Notifications (for bot monitoring)
+PUSHOVER_APP_TOKEN= # Your Pushover app token
+PUSHOVER_USER_KEY= # Your Pushover user key
+
+# Channel permissions (automatically created, no manual setup needed)
+# Private channels will be created with format: onboarding-{username}
